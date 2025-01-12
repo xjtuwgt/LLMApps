@@ -6,7 +6,9 @@ import markdown
 # Initialize Flask app
 app = Flask(__name__)
 
-model_name = SAMBA_MODEL['llama70b_v3']
+model_name_alias = 'llama70b_v3' # qwen72b
+
+model_name = SAMBA_MODEL[model_name_alias]
 prompt = """
 Revise the following text for clarity, grammar, and coherence. Improve readability while preserving the original meaning. 
 Provide the revised version of the text first, followed by a step-by-step explanation of the changes made. 
