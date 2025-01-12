@@ -1,7 +1,5 @@
 # LLM Applications
 
-![Project Banner](https://via.placeholder.com/1200x400.png?text=Project+Banner)
-
 ## 📖 Table of Contents
 - [About the Project](#about-the-project)
 - [Features](#features)
@@ -26,9 +24,9 @@ aims to
 ---
 
 ## ✨ Features
-- ✅ Feature 1
-- ✅ Feature 2
-- ✅ Feature 3
+- ✅ SambaNova FastInference API
+- ✅ Well-known NLP task prompts
+- ✅ Applications based on FastInference
 
 ---
 
