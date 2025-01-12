@@ -50,6 +50,18 @@ These instructions will help you set up and run the project on your local machin
 
 ### 📦 Prerequisites
 - [Tool/Software] – Apply SambaNova API key via https://cloud.sambanova.ai/?api_ref=117487
+- Set SAMBANOVA_API_KEY
+```bash
+#  Setting Environment Variable (Linux/macOS)
+
+export SAMBANOVA_API_KEY="your_sambanova_api_key_here"
+
+#  Setting Environment Variable (Windows)
+
+set SAMBANOVA_API_KEY=your_sambanova_api_key_here
+
+```
+
 
 
 ### 📥 Installation
