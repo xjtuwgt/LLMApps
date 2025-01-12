@@ -39,23 +39,18 @@ aims to
 - QwQ model
 
 ## Applications
-- Text revision with explaination: '''python3 -m applications.text_revision''' and then run html 'http://127.0.0.1:5000/'
+- Text revision with explaination: start the server ```python3 -m applications.text_revision```, and then run html 'http://127.0.0.1:5000/'
 
 
 ## 🚀 Getting Started
 These instructions will help you set up and run the project on your local machine.
 
 ### 📦 Prerequisites
-- [Tool/Software] – Version X.X.X
-- [Tool/Software] – Version Y.Y.Y
+- [Tool/Software] – Apply SambaNova API key via https://cloud.sambanova.ai/?api_ref=117487
+
 
 ### 📥 Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo.git
-
-# Navigate into the project directory
-cd your-repo
-
-# Install dependencies
-npm install
+git clone 
+```
