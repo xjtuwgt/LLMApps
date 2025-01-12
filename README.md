@@ -39,7 +39,8 @@ aims to
 - QwQ model
 
 ## Applications
-- Text revision with explaination
+- Text revision with explaination: '''python3 -m applications.text_revision''' and then run html 'http://127.0.0.1:5000/'
+
 
 ## 🚀 Getting Started
 These instructions will help you set up and run the project on your local machine.
