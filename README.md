@@ -34,8 +34,8 @@ aims to
 - Llama3.2 1B, 3B instruction models
 - Llama3.3 70B instruction models
 - Qwen 2.5 72B instruction models
-- Qwen coder 32B model
-- QwQ model
+- Qwen 2.5 coder 32B model
+- QwQ model 32B
 
 ---
 
