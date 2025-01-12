@@ -4,9 +4,9 @@
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
+- [Applications](#applications)
 - [Installation](#installation)
-- [Supported LLMs](#usage)
+- [Supported LLMs](#llms)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -37,6 +37,9 @@ aims to
 - Qwen 2.5 72B instruction models
 - Qwen coder 32B model
 - QwQ model
+
+## Applications
+- Text revision with explaination
 
 ## 🚀 Getting Started
 These instructions will help you set up and run the project on your local machine.
