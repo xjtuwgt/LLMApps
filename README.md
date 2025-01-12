@@ -29,7 +29,7 @@ aims to
 
 ---
 
-## ✨ LLMs
+## 📚 LLMs
 - Llama3.1 8B, 70B, 405B instruction models
 - Llama3.2 1B, 3B instruction models
 - Llama3.3 70B instruction models
@@ -39,7 +39,7 @@ aims to
 
 ---
 
-## Applications
+## ✨ Applications
 - Text revision with explaination: start the server ```python3 -m applications.text_revision```, and then run html 'http://127.0.0.1:5000/'
 
 ---
@@ -56,3 +56,5 @@ These instructions will help you set up and run the project on your local machin
 # Clone the repository
 git clone 
 ```
+
+⭐️ Don’t forget to star the project if you found it useful!
