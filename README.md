@@ -3,10 +3,9 @@
 ## 📖 Table of Contents
 - [About the Project](#about-the-project)
 - [Features](#features)
-- [Getting Started](#getting-started)
+- [LLMs](#llms)
 - [Applications](#applications)
 - [Installation](#installation)
-- [Supported LLMs](#llms)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -30,7 +29,7 @@ aims to
 
 ---
 
-## Supported LLMs
+## ✨ LLMs
 - Llama3.1 8B, 70B, 405B instruction models
 - Llama3.2 1B, 3B instruction models
 - Llama3.3 70B instruction models
@@ -38,9 +37,12 @@ aims to
 - Qwen coder 32B model
 - QwQ model
 
+---
+
 ## Applications
 - Text revision with explaination: start the server ```python3 -m applications.text_revision```, and then run html 'http://127.0.0.1:5000/'
 
+---
 
 ## 🚀 Getting Started
 These instructions will help you set up and run the project on your local machine.
