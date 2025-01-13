@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Question Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        textarea { width: 100%; }
+        select, input { margin-top: 10px; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h1>LLM Question Generator</h1>
+    <form action="/" method="POST">
+        <!-- Input for context -->
+        <label for="context">Enter Context:</label><br>
+        <textarea name="context" rows="6" cols="60" required>{{ context if context else '' }}</textarea><br><br>
+
+        <!-- Dropdown for question type selection -->
+        <label for="question_type">Select Question Type:</label><br>
+        <select name="question_type" required>
+            {% for question in question_types %}
+                <option value="{{ question }}" {% if question == question_type %}selected{% endif %}>{{ question }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <!-- Number of Questions Input -->
+        <label for="num_questions">Number of Questions to Generate:</label><br>
+        <input type="number" name="num_questions" min="1" max="10" value="{{ num_questions if num_questions else '1' }}" required><br><br>
+
+        <!-- Generate Button -->
+        <input type="submit" value="Generate Question">
+    </form>
+
+    <!-- Display generated question if available -->
+    {% if generated_question %}
+    <p><strong>Assistant:</strong> {{ generated_question | safe }}</p>
+    {% endif %}
+</body>
+</html>
