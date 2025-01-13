@@ -23,7 +23,7 @@ def generate_question(context, question_type, num_questions):
     try:
         response = call_api(model_name=model_name, messages=[{"role": "system", "content": system_prompt.format(NUM_QUESTIONS=num_questions)}, 
                                                              {"role":"user","content":context}, 
-                                                             {"role":"user","content": question_type}])
+                                                             {"role":"user","content": 'Quesiton type: {}\n'.format(question_type)}])
         response = markdown.markdown(response)
         return response
     except Exception as e:
@@ -48,12 +48,12 @@ def index():
         num_questions = request.form.get('num_questions')
         generated_question = generate_question(context, question_type, num_questions)
 
-    return render_template('question_index.html', 
+    return render_template('index.html', 
                            question_types=question_types, 
                            generated_question=generated_question, 
                            context=context, 
-                           question_type=question_type)
-
+                           question_type=question_type, 
+                           num_questions=num_questions)
 if __name__ == '__main__':
     app.run(debug=True)
 
