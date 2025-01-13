@@ -41,6 +41,7 @@ aims to
 
 ## ✨ Applications
 - Text revision with explaination: start the server ```python3 -m applications.text_revision```, and then run HTML 'http://127.0.0.1:5000/'
+- Question generation with given context and question type ```python3 -m applications.question_gen```, and then run HTML 'http://127.0.0.1:5000/'
 - Single Round Chat or QA: start the server ```python3 -m chat.chatapi```, and then run HTML 'http://127.0.0.1:5000/'
 
 ---
