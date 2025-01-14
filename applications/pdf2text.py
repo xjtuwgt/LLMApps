@@ -23,7 +23,6 @@ def index():
         # Extract text from the uploaded PDF
         if file and file.filename.endswith('.pdf'):
             text = extract_text_from_pdf(file_path)
-            text = markdown.markdown(text=text)
             return render_template('pdf_index.html', text=text)
         else:
             return "Please upload a valid PDF file."
