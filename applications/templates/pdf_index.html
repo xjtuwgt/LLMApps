@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Uploader and Markdown Renderer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <h1>Upload a PDF and Render Markdown</h1>
+
+    <!-- PDF Upload Form -->
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <br><br>
+        <button type="submit">Upload and Extract Text</button>
+    </form>
+
+    {% if text %}
+    <!-- Raw Markdown Text -->
+    <h2>Extracted Markdown Text:</h2>
+    <textarea id="markdownInput" rows="10" cols="80">{{ text | safe }}</textarea>
+    <br><br>
+
+    <!-- Save Button -->
+    <button onclick="saveTextAsFile()">Save Extracted Text as File</button>
+    <br><br>
+
+    <!-- Button to Render Markdown -->
+    <button onclick="renderMarkdown()">Render Markdown</button>
+    <br><br>
+
+    <!-- Rendered Markdown Output -->
+    <h2>Rendered Markdown Output:</h2>
+    <div id="markdownOutput" style="border: 1px solid #ccc; padding: 10px;"></div>
+
+    <script>
+        // Render Markdown using marked.js
+        function renderMarkdown() {
+            var rawText = document.getElementById('markdownInput').value;
+            var renderedText = marked.parse(rawText); // Render markdown using marked.js
+            document.getElementById('markdownOutput').innerHTML = renderedText;
+        }
+
+        // Save Extracted Text as a File
+        function saveTextAsFile() {
+            var text = document.getElementById('markdownInput').value;
+            var blob = new Blob([text], { type: 'text/plain' });
+            var link = document.createElement('a');
+            link.download = 'extracted_text.txt';
+            link.href = window.URL.createObjectURL(blob);
+            link.click();
+        }
+    </script>
+    {% endif %}
+</body>
+</html>
