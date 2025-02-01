@@ -43,6 +43,7 @@ aims to
 - Text revision with explaination: start the server ```python3 -m applications.text_revision```, and then run HTML 'http://127.0.0.1:5000/'
 - Question generation with given context and question type ```python3 -m applications.question_gen```, and then run HTML 'http://127.0.0.1:5000/'
 - Single Round Chat or QA: start the server ```python3 -m chat.chatapi```, and then run HTML 'http://127.0.0.1:5000/'
+- PDF paper to marked down text: start the server ```python3 -m applications.pdf2text```, and then run HTML 'http://127.0.0.1:5000/'
 
 ---
 
@@ -69,6 +70,8 @@ set SAMBANOVA_API_KEY=your_sambanova_api_key_here
 ```bash
 # Clone the repository
 git clone 
+
+pip install pdf4llm
 ```
 
 ⭐️ Don’t forget to star the project if you found it useful!
