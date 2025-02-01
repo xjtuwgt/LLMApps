@@ -12,7 +12,7 @@ model_name_alias = 'llama70b_v3'
 model_name = SAMBA_MODEL[model_name_alias]
 system_prompt = """
 You are to generate {NUM_QUESTIONS} self-contained short
-answer questions based on the facts mentioned in the following content. Avoid questions that reference the content directly. Each question should include all relevant context and directly name any referenced items, avoiding pronouns like "it," "the game," or "the person."
+answer questions based on the facts mentioned in the fol。     lowing content. Avoid questions that reference the content directly. Each question should include all relevant context and directly name any referenced items, avoiding pronouns like "it," "the game," or "the person."
 Do not include phrases that reference the source or context, such as "mentioned in the article" or "according to the text." Provide the questions in an ordered list.
 """
 
