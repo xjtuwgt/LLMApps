@@ -72,6 +72,8 @@ set SAMBANOVA_API_KEY=your_sambanova_api_key_here
 git clone 
 
 pip install pdf4llm
+
+pip install python-pptx
 ```
 
 ⭐️ Don’t forget to star the project if you found it useful!
