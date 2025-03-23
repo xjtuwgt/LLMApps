@@ -1,3 +1,9 @@
+"""
+paper2slides.py
+
+This script is used to convert a research paper into a set of slides.
+
+"""
 slide_datasource = {
     'introduction': ['abstract', 'Introduction'],
     'objective': ['abstract', 'Introduction'],
@@ -15,8 +21,15 @@ import string
 SLIDE_SEP = '<slide_sep>'
 
 def trim_string(s):
+    """
+    Trim the string by removing the whitespace and punctuation.
+    """
     return s.strip(string.whitespace + string.punctuation)
 
+
+"""
+Scientist paper section name mapping
+"""
 section_title_key_phrases = {
     'Introduction': ['introduction'],
     'Related Works': ['related work'],
@@ -27,6 +40,9 @@ section_title_key_phrases = {
     'References': ['references', ' references'], #
 }
 
+"""
+Find the index of the target string in the list.
+"""
 def find_string_index(string_list, target: str):
     """
     Returns the index of the target string in the list.
@@ -45,6 +61,9 @@ def find_string_index(string_list, target: str):
         return -1
 
 
+"""
+Get the section category from the section name.
+"""
 def get_section_category(section_name: str):
     """
     Scientist paper section name mapping

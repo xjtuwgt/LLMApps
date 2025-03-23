@@ -25,8 +25,8 @@ def call_api(model_name, messages, **kwargs):
     response = client.chat.completions.create(
         model=model_name,
         messages=messages,
-        temperature=kwargs.get("temperature", 0.1),
-        top_p=kwargs.get("top_p", 0.1),
+        temperature=kwargs.get("temperature", 0.6),
+        top_p=kwargs.get("top_p", 0.95),
     )
     return response.choices[0].message.content
 
